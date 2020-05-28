@@ -8,7 +8,7 @@ Usage
 # Import and open connection to the database
 # (provide the path to your ssh key)
 import stmdb
-db = stmdb.connection(ssh_key_path=".ssh/id_rsa")
+db = stmdb.connection(host="the_host", user="the_user", ssh_key_path="my/ssh/key/path")
 
 # Get tags of image with ID=1
 db.get_tags(1)
